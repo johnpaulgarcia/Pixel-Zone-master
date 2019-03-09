@@ -1,0 +1,202 @@
+<project>
+    <shortName>WróblowaGame</shortName>
+    <fullName>Wróblowa Game</fullName>
+    <version>1.4</version>
+    <installerFilename>${project.shortName}-${project.version}-${platform_name}-installer.${platform_exec_suffix}</installerFilename>
+    <readmeFile>C:/Users/Karol Tomaszewski/Desktop/exports/Pixel Zone/v1.2/LICENSE.txt</readmeFile>
+    <licenseFile>C:/Users/Karol Tomaszewski/Desktop/exports/Pixel Zone/v1.2/LICENSE.txt</licenseFile>
+    <leftImage>C:/Users/Karol Tomaszewski/Desktop/exports/Pixel Zone/v1.2/icon.png</leftImage>
+    <logoImage>C:/Users/Karol Tomaszewski/Desktop/exports/Pixel Zone/v1.2/icon.png</logoImage>
+    <splashImage>C:/Users/Karol Tomaszewski/Desktop/exports/Pixel Zone/v1.2/icon.png</splashImage>
+    <allowLanguageSelection>1</allowLanguageSelection>
+    <componentList>
+        <component>
+            <name>wroblowagame</name>
+            <description>Wróblowa Game</description>
+            <canBeEdited>1</canBeEdited>
+            <detailedDescription>Wróblowa Game by Master Games</detailedDescription>
+            <requiredSize>90000</requiredSize>
+            <selected>1</selected>
+            <show>1</show>
+            <desktopShortcutList>
+                <shortcut>
+                    <comment></comment>
+                    <exec></exec>
+                    <icon></icon>
+                    <name>Wróblowa Game</name>
+                    <path></path>
+                    <platforms>windows</platforms>
+                    <runAsAdmin>0</runAsAdmin>
+                    <runInTerminal>0</runInTerminal>
+                    <windowsExec>${installdir}/Wróblowa Game/bin/windows/PixelZone32.exe</windowsExec>
+                    <windowsExecArgs></windowsExecArgs>
+                    <windowsIcon>${installdir}/Wróblowa Game/bin/windows/icon.ico</windowsIcon>
+                    <windowsPath></windowsPath>
+                </shortcut>
+                <shortcut>
+                    <comment></comment>
+                    <exec></exec>
+                    <icon></icon>
+                    <name>Uninstall Wróblowa Game</name>
+                    <path></path>
+                    <platforms>windows</platforms>
+                    <runAsAdmin>0</runAsAdmin>
+                    <runInTerminal>0</runInTerminal>
+                    <windowsExec>${installdir}/Wróblowa Game/uninstall/uninstall.exe</windowsExec>
+                    <windowsExecArgs></windowsExecArgs>
+                    <windowsIcon>${installdir}/Wróblowa Game/bin/windows/icon.ico</windowsIcon>
+                    <windowsPath></windowsPath>
+                </shortcut>
+            </desktopShortcutList>
+            <folderList>
+                <folder>
+                    <description>Program Files</description>
+                    <destination>${installdir}/Wróblowa Game/bin/linux</destination>
+                    <name>linux</name>
+                    <platforms>linux</platforms>
+                    <distributionFileList>
+                        <distributionFile>
+                            <origin>C:/Users/Karol Tomaszewski/Desktop/exports/Wróblowa Game/v1.4/Linux/32/PixelZone32.pck</origin>
+                        </distributionFile>
+                        <distributionFile>
+                            <origin>C:/Users/Karol Tomaszewski/Desktop/exports/Wróblowa Game/v1.4/Linux/32/PixelZone32.x86</origin>
+                        </distributionFile>
+                        <distributionFile>
+                            <origin>C:/Users/Karol Tomaszewski/Desktop/exports/Wróblowa Game/v1.4/icon.png</origin>
+                        </distributionFile>
+                        <distributionFile>
+                            <origin>C:/Users/Karol Tomaszewski/Desktop/exports/Wróblowa Game/v1.4/LICENSE.txt</origin>
+                        </distributionFile>
+                    </distributionFileList>
+                </folder>
+                <folder>
+                    <destination>${installdir}/Wróblowa Game/bin/linux64/</destination>
+                    <name>linux64</name>
+                    <platforms>linux-x64</platforms>
+                    <distributionFileList>
+                        <distributionFile>
+                            <origin>C:/Users/Karol Tomaszewski/Desktop/exports/Wróblowa Game/v1.4/icon.png</origin>
+                        </distributionFile>
+                        <distributionFile>
+                            <origin>C:/Users/Karol Tomaszewski/Desktop/exports/Wróblowa Game/v1.4/LICENSE.txt</origin>
+                        </distributionFile>
+                        <distributionFile>
+                            <origin>C:/Users/Karol Tomaszewski/Desktop/exports/Wróblowa Game/v1.4/Linux/64/PixelZone64.pck</origin>
+                        </distributionFile>
+                        <distributionFile>
+                            <origin>C:/Users/Karol Tomaszewski/Desktop/exports/Wróblowa Game/v1.4/Linux/64/PixelZone64.x86_64</origin>
+                        </distributionFile>
+                    </distributionFileList>
+                </folder>
+                <folder>
+                    <destination>${installdir}/Wróblowa Game/bin/windows/</destination>
+                    <name>windows</name>
+                    <platforms>windows</platforms>
+                    <distributionFileList>
+                        <distributionFile>
+                            <origin>C:/Users/Karol Tomaszewski/Desktop/exports/Wróblowa Game/v1.4/LICENSE.txt</origin>
+                        </distributionFile>
+                        <distributionFile>
+                            <origin>C:/Users/Karol Tomaszewski/Desktop/exports/Wróblowa Game/v1.4/icon.ico</origin>
+                        </distributionFile>
+                        <distributionFile>
+                            <origin>C:/Users/Karol Tomaszewski/Desktop/exports/Wróblowa Game/v1.4/Windows/PixelZone32.exe</origin>
+                        </distributionFile>
+                        <distributionFile>
+                            <origin>C:/Users/Karol Tomaszewski/Desktop/exports/Wróblowa Game/v1.4/Windows/PixelZone32.pck</origin>
+                        </distributionFile>
+                    </distributionFileList>
+                </folder>
+                <folder>
+                    <destination>${installdir}/Wróblowa Game/bin/mac/</destination>
+                    <name>mac</name>
+                    <platforms>osx</platforms>
+                    <distributionFileList>
+                        <distributionDirectory>
+                            <origin>C:/Users/Karol Tomaszewski/Desktop/exports/Wróblowa Game/v1.4/Wr├│blowa Game.app</origin>
+                        </distributionDirectory>
+                        <distributionFile>
+                            <origin>C:/Users/Karol Tomaszewski/Desktop/exports/Wróblowa Game/v1.4/LICENSE.txt</origin>
+                        </distributionFile>
+                        <distributionFile>
+                            <origin>C:/Users/Karol Tomaszewski/Desktop/exports/Wróblowa Game/v1.4/icon.png</origin>
+                        </distributionFile>
+                    </distributionFileList>
+                </folder>
+            </folderList>
+            <startMenuShortcutList>
+                <startMenuShortcut>
+                    <comment></comment>
+                    <name>Wróblowa Game</name>
+                    <runAsAdmin>0</runAsAdmin>
+                    <runInTerminal>0</runInTerminal>
+                    <windowsExec>${installdir}/Wróblowa Game/bin/windows/PixelZone32.exe</windowsExec>
+                    <windowsExecArgs></windowsExecArgs>
+                    <windowsIcon>${installdir}/Wróblowa Game/bin/windows/icon.ico</windowsIcon>
+                    <windowsPath></windowsPath>
+                </startMenuShortcut>
+                <startMenuShortcut>
+                    <comment></comment>
+                    <name>Uninstall Wróblowa Game</name>
+                    <runAsAdmin>0</runAsAdmin>
+                    <runInTerminal>0</runInTerminal>
+                    <windowsExec>${installdir}/Wróblowa Game/uninstall/uninstall.exe</windowsExec>
+                    <windowsExecArgs></windowsExecArgs>
+                    <windowsIcon>${installdir}/Wróblowa Game/bin/windows/icon.ico</windowsIcon>
+                    <windowsPath></windowsPath>
+                </startMenuShortcut>
+            </startMenuShortcutList>
+        </component>
+    </componentList>
+    <allowComponentSelection>1</allowComponentSelection>
+    <enableRollback>1</enableRollback>
+    <enableTimestamp>1</enableTimestamp>
+    <uninstallerDirectory>${installdir}/Wróblowa Game/uninstall</uninstallerDirectory>
+    <vendor>Master</vendor>
+    <finalPageActionList>
+        <launchBrowser>
+            <progressText>Master, Inc Website</progressText>
+            <url>https://masterpolska.pl.tl</url>
+        </launchBrowser>
+        <launchBrowser>
+            <progressText>Project Website</progressText>
+            <url>https://karoltomaszewskimu.wixsite.com/mastergames</url>
+        </launchBrowser>
+    </finalPageActionList>
+    <installationAbortedActionList>
+        <showWarning>
+            <text>The installation has been aborted.</text>
+        </showWarning>
+    </installationAbortedActionList>
+    <parameterList>
+        <directoryParameter>
+            <name>installdir</name>
+            <description>Installation directory</description>
+            <explanation>Please specify the directory where ${project.fullName} will be installed</explanation>
+            <value>${platform_install_prefix}/Master Games</value>
+            <default>${platform_install_prefix}/Master Games</default>
+            <allowEmptyValue>0</allowEmptyValue>
+            <cliOptionName>prefix</cliOptionName>
+            <mustBeWritable>1</mustBeWritable>
+            <mustExist>0</mustExist>
+            <width>30</width>
+        </directoryParameter>
+        <infoParameter>
+            <name>final_info</name>
+            <title>Thank you for the evaluation</title>
+            <description></description>
+            <explanation></explanation>
+            <value>Thanks for installing Master's, Inc. "Pixel Zone"
+Visit 'Project Website' to download newest wersions of Pixel Zone
+If Installer, Game or one of components isn't working properly, please visit
+https://masterpolska.pl.tl/Skontaktuj-si%26%23281%3B-z-nami.htm
+
+Our Privacy Policy are visible at:
+https://masterpolska.pl.tl/RODO.htm</value>
+            <default></default>
+            <insertAfter>installation</insertAfter>
+            <trimMarginNumChars>0</trimMarginNumChars>
+        </infoParameter>
+    </parameterList>
+</project>
+

@@ -1,0 +1,34 @@
+Pixel Zone
+
+It's a simle platformer game made by Master - Games in Godot Engine 3.1 beta 4.
+End User Agreement (only applicable to Pixel Zone, not applicable to a project created using the source code):
+
+
+1. Bans / orders
+
+1a. Prohibition of creating modifications containing:
+
+     - Blood
+
+     - Violence
+
+     - Adult content
+
+     - Drugs
+
+1b. The game should be downloaded from the GitHub website, or the official project website.
+
+1c. Prohibition to sell the game. The game is an Open-Soruce project, however, its sale is forbidden to end users.
+1d. Telling false information about the game, or about the creators.
+
+2. Privileges
+
+2a. The user can join the project (Knowledge of Godot Engine required)
+
+2b. The user may establish a partnership with the creators, via e-mail, which is available on the manufacturer's website.
+
+2c. The user has the right to express his own opinion about the game, but not its creators.
+
+2d. The user can only record material from the game and publish it on the internet, but first you must inform the creators of the game, and only then publish the materials
+
+The creator is 'Master, Inc.'
