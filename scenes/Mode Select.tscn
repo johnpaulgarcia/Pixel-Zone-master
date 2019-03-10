@@ -31,21 +31,6 @@ custom_colors/font_color_hover = Color( 0.596078, 0.596078, 0.596078, 1 )
 text = "Normal Mode"
 flat = true
 
-[node name="no_enemies_mode" type="Button" parent="."]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -117.0
-margin_top = 15.0
-margin_right = 124.0
-margin_bottom = 47.0
-theme = ExtResource( 4 )
-custom_fonts/font = ExtResource( 3 )
-custom_colors/font_color_hover = Color( 0.596078, 0.596078, 0.596078, 1 )
-text = "No Enemies Mode"
-flat = true
-
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 margin_left = 1.0
 margin_top = -3.0
@@ -69,11 +54,6 @@ Normal Mode
 
 This is an average difficult game mode. In each level you will find an opponent who takes your life points. You can shoot at them to kill them.
 
-
-
-No Enemies Mode
-
-This is the easiest game mode. You will not find any enemy in it, which does not mean that you can die by falling into the abyss.
 "
 script = ExtResource( 5 )
 
@@ -90,4 +70,3 @@ theme = ExtResource( 4 )
 text = "Show description of modes"
 
 [connection signal="pressed" from="Normal_mode" to="." method="_on_Normal_mode_pressed"]
-[connection signal="pressed" from="no_enemies_mode" to="." method="_on_no_enemies_mode_pressed"]

@@ -1,6 +1,6 @@
 extends Node
-func _ready():
-	get_node("/root/game_level").points += 1
+#func _ready():
+	#get_node("/root/game_level").points += 1
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
@@ -8,10 +8,6 @@ func _ready():
 # Called when the node enters the scene tree for the first time.
 
 
-
-func _on_Area2D_body_entered(body):
-	if body.name == "player":
-		get_tree().change_scene("scenes/stages/normal_mode/stage2.tscn")
 
 
 
@@ -29,3 +25,10 @@ func save():
 		"pos_y" : get_position().y,
     }
     return save_dict
+
+
+
+
+func _on_nextlevel_body_entered(body):
+	if body.name == "player":
+		get_tree().change_scene("scenes/stages/normal_mode/stage2.tscn")

@@ -101,6 +101,10 @@ func _physics_process(delta):
  
 
 func _on_Area2D2_area_entered(area):
+	if area.name == "next_level":
+		$ui/AnimationPlayer.play("next_level")
+	if area.name == "next_level2":
+		$ui/AnimationPlayer.play("next_level")
 	if area.name == "enemyarea":
 		$ui/ProgressBar.value -= 3
 	if area.name == "bossarea":

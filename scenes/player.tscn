@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=2]
+[gd_scene load_steps=28 format=2]
 
 [ext_resource path="res://scripts/player.gd" type="Script" id=1]
 [ext_resource path="res://textures/robot_demo.png" type="Texture" id=2]
@@ -14,7 +14,8 @@
 [ext_resource path="res://textures/osb_fire.png" type="Texture" id=12]
 [ext_resource path="res://scenes/timer.tscn" type="PackedScene" id=13]
 [ext_resource path="res://animations/bosses/dialog.tres" type="Animation" id=14]
-[ext_resource path="res://graphic_themes/theme_test.tres" type="Theme" id=15]
+[ext_resource path="res://animations/cutscenes/next_level.tres" type="Animation" id=15]
+[ext_resource path="res://graphic_themes/theme_test.tres" type="Theme" id=16]
 
 [sub_resource type="CapsuleShape2D" id=1]
 height = 44.4787
@@ -316,8 +317,15 @@ margin_top = 28.625
 margin_right = -930.749
 margin_bottom = -543.375
 
+[node name="ColorRect" type="ColorRect" parent="ui"]
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
+
 [node name="AnimationPlayer" type="AnimationPlayer" parent="ui"]
 anims/dialog = ExtResource( 14 )
+anims/next_level = ExtResource( 15 )
 
 [node name="RichTextLabel" type="RichTextLabel" parent="ui"]
 visible = false
@@ -329,7 +337,7 @@ margin_left = -386.625
 margin_top = -83.8751
 margin_right = 395.375
 margin_bottom = 37.1249
-theme = ExtResource( 15 )
+theme = ExtResource( 16 )
 custom_fonts/normal_font = ExtResource( 6 )
 bbcode_enabled = true
 bbcode_text = "[center]
