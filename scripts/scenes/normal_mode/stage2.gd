@@ -6,7 +6,7 @@ func _ready():
 
 func _on_Area2D_body_entered(body):
 	if body.name =="player":
-		get_tree().change_scene("scenes/Credits.tscn")
+		get_tree().change_scene("scenes/normal_mode/stage3_boss.tscn")
 
 
 

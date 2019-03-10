@@ -103,6 +103,9 @@ func _physics_process(delta):
 func _on_Area2D2_area_entered(area):
 	if area.name == "enemyarea":
 		$ui/ProgressBar.value -= 3
+	if area.name == "bossarea":
+		$ui/ProgressBar.value -= 3
+		$ui/AnimationPlayer.play("dialog")
 func save():
     var save_dict = {
         "filename" : get_filename(),
