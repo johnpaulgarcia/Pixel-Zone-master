@@ -1,11 +1,12 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
-[ext_resource path="res://scenes/stages/normal_mode/stage3_boss.gd" type="Script" id=1]
+[ext_resource path="res://scripts/scenes/normal_mode/stage3_boss.gd" type="Script" id=1]
 [ext_resource path="res://titles/tileset.tres" type="TileSet" id=2]
-[ext_resource path="res://scenes/player.tscn" type="PackedScene" id=3]
-[ext_resource path="res://scenes/parallax_bg.tscn" type="PackedScene" id=4]
-[ext_resource path="res://sounds/music.ogg" type="AudioStream" id=5]
-[ext_resource path="res://scenes/bosses/boss1.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/coin.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/player.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/parallax_bg.tscn" type="PackedScene" id=5]
+[ext_resource path="res://sounds/music.ogg" type="AudioStream" id=6]
+[ext_resource path="res://scenes/bosses/boss1.tscn" type="PackedScene" id=7]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 1797.06, 10 )
@@ -22,13 +23,51 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="player" parent="." instance=ExtResource( 3 )]
-position = Vector2( 148.043, 976.698 )
+[node name="coins" type="Node" parent="."]
 
-[node name="parallax_bg" parent="." instance=ExtResource( 4 )]
+[node name="coin" parent="coins" instance=ExtResource( 3 )]
+position = Vector2( 800, 1366.88 )
+
+[node name="coin2" parent="coins" instance=ExtResource( 3 )]
+position = Vector2( 670, 1366.88 )
+
+[node name="coin7" parent="coins" instance=ExtResource( 3 )]
+position = Vector2( 925, 1366.88 )
+
+[node name="coin8" parent="coins" instance=ExtResource( 3 )]
+position = Vector2( 1050, 1366.88 )
+
+[node name="coin9" parent="coins" instance=ExtResource( 3 )]
+position = Vector2( 1175, 1366.88 )
+
+[node name="coin3" parent="coins" instance=ExtResource( 3 )]
+position = Vector2( 1300, 1366.88 )
+
+[node name="coin4" parent="coins" instance=ExtResource( 3 )]
+position = Vector2( 1425, 1366.88 )
+
+[node name="coin5" parent="coins" instance=ExtResource( 3 )]
+position = Vector2( 1550, 1366.88 )
+
+[node name="coin6" parent="coins" instance=ExtResource( 3 )]
+position = Vector2( 1675, 1366.88 )
+
+[node name="coin10" parent="coins" instance=ExtResource( 3 )]
+position = Vector2( 1800, 1366.88 )
+
+[node name="coin11" parent="coins" instance=ExtResource( 3 )]
+position = Vector2( 1925, 1366.88 )
+
+[node name="coin12" parent="coins" instance=ExtResource( 3 )]
+position = Vector2( 2000, 1366.88 )
+
+[node name="player" parent="." instance=ExtResource( 4 )]
+position = Vector2( 489.762, 1151.35 )
+
+[node name="parallax_bg" parent="." instance=ExtResource( 5 )]
 
 [node name="music" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 5 )
+stream = ExtResource( 6 )
 autoplay = true
 bus = "Music"
 
@@ -39,7 +78,7 @@ position = Vector2( 91.125, 1742.77 )
 position = Vector2( -11.3906, 432.844 )
 shape = SubResource( 1 )
 
-[node name="boss" parent="." instance=ExtResource( 6 )]
-position = Vector2( 2988.14, 1804.78 )
+[node name="boss" parent="." instance=ExtResource( 7 )]
+position = Vector2( 3041.3, 1776.94 )
 
 [connection signal="body_entered" from="Area2D2" to="." method="_on_Area2D2_body_entered"]

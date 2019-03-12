@@ -46,7 +46,14 @@ func _physics_process(delta):
 		target_speed += -1
 	if Input.is_action_pressed("move_right"):
 		target_speed +=  1
-
+	if Input.is_action_pressed("speed_left"):
+		target_speed += -1.1
+	if Input.is_action_pressed("speed_right"):
+		target_speed += 1.1
+	if Input.is_action_pressed("speed") and Input.is_action_pressed("move_left"):
+		target_speed += -1.1
+	if Input.is_action_pressed("speed") and Input.is_action_pressed("move_right"):
+		target_speed += 1.1
 	target_speed *= WALK_SPEED
 	linear_vel.x = lerp(linear_vel.x, target_speed, 0.1)
 

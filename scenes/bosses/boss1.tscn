@@ -1,13 +1,15 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://scripts/bosses/boss1.gd" type="Script" id=1]
-[ext_resource path="res://textures/enemy.png" type="Texture" id=2]
+[ext_resource path="res://textures/bosses/boss1/Bez nazwy.png" type="Texture" id=2]
 [ext_resource path="res://textures/bullet.png" type="Texture" id=3]
 [ext_resource path="res://sounds/sound_hit.wav" type="AudioStream" id=4]
 [ext_resource path="res://sounds/sound_explode.wav" type="AudioStream" id=5]
+[ext_resource path="res://graphic_themes/theme_test.tres" type="Theme" id=6]
 
 [sub_resource type="CapsuleShape2D" id=1]
-radius = 16.9998
+radius = 27.3689
+height = 58.7568
 
 [sub_resource type="Animation" id=2]
 length = 5.0
@@ -160,8 +162,8 @@ tracks/0/keys = {
 [sub_resource type="CanvasItemMaterial" id=5]
 
 [sub_resource type="CapsuleShape2D" id=6]
-radius = 13.4556
-height = 14.2002
+radius = 25.9036
+height = 57.4256
 
 [sub_resource type="CanvasItemMaterial" id=7]
 blend_mode = 1
@@ -210,24 +212,24 @@ rotation = -1.5708
 shape = SubResource( 6 )
 
 [node name="detect_floor_left" type="RayCast2D" parent="."]
-position = Vector2( -33.2868, -9.34363 )
+position = Vector2( -39.2868, -8.67696 )
 enabled = true
 cast_to = Vector2( 0, 45 )
 
 [node name="detect_wall_left" type="RayCast2D" parent="."]
-position = Vector2( -12.1361, -0.739977 )
+position = Vector2( -40.8027, -1.40665 )
 rotation = 1.5708
 enabled = true
 cast_to = Vector2( 0, 20 )
 
 [node name="detect_wall_right" type="RayCast2D" parent="."]
-position = Vector2( 3.2788, -0.381488 )
+position = Vector2( 35.2788, -0.381488 )
 rotation = -1.5708
 enabled = true
 cast_to = Vector2( 0, 20 )
 
 [node name="detect_floor_right" type="RayCast2D" parent="."]
-position = Vector2( 29.1987, -9.34363 )
+position = Vector2( 47.1987, -8.0103 )
 enabled = true
 cast_to = Vector2( 0, 45 )
 
@@ -252,10 +254,11 @@ stream = ExtResource( 5 )
 bus = "SFX"
 
 [node name="ProgressBar" type="ProgressBar" parent="."]
-margin_left = -33.3333
-margin_top = -37.3333
-margin_right = 37.6667
-margin_bottom = -23.3333
+margin_left = -46.0
+margin_top = -48.0
+margin_right = 52.0
+margin_bottom = -34.0
+theme = ExtResource( 6 )
 page = 0.5
 value = 99.5
 exp_edit = true

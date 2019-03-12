@@ -7,8 +7,8 @@
 [ext_resource path="res://scripts/scenes/StatsScene/StatsScene.tscn" type="PackedScene" id=5]
 [ext_resource path="res://scenes/OptionsPage.tscn" type="PackedScene" id=6]
 [ext_resource path="res://scenes/ControlsPage.tscn" type="PackedScene" id=7]
-[ext_resource path="res://ubuntu-font-family/UB22C3.tres" type="DynamicFont" id=8]
-[ext_resource path="res://graphic_themes/theme_test.tres" type="Theme" id=9]
+[ext_resource path="res://graphic_themes/theme_test.tres" type="Theme" id=8]
+[ext_resource path="res://ubuntu-font-family/UB22C3.tres" type="DynamicFont" id=9]
 [ext_resource path="res://globals/LevelBGMPlayer.gd" type="Script" id=10]
 [ext_resource path="res://scripts/save.gd" type="Script" id=11]
 
@@ -71,65 +71,12 @@ margin_left = -2.0
 margin_right = 335.0
 margin_bottom = 601.0
 
-[node name="QuitPage" type="Panel" parent="UIScaler/Menu"]
-visible = false
-self_modulate = Color( 1, 1, 1, 0 )
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = 399.25
-margin_top = -13.75
-margin_right = 261.25
-margin_bottom = -13.75
-
-[node name="Label" type="Label" parent="UIScaler/Menu/QuitPage"]
-anchor_top = 0.5
-anchor_right = 1.0
-anchor_bottom = 0.5
-margin_left = 2.0
-margin_top = -97.0
-margin_right = 2.0
-margin_bottom = -42.0
-custom_fonts/font = ExtResource( 8 )
-text = "Do you want to quit?
-"
-align = 1
-
-[node name="HBoxContainer" type="HBoxContainer" parent="UIScaler/Menu/QuitPage"]
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = 266.0
-margin_top = -325.0
-margin_right = -247.0
-margin_bottom = -275.0
-
-[node name="Yes" type="Button" parent="UIScaler/Menu/QuitPage/HBoxContainer"]
-margin_right = 153.0
-margin_bottom = 50.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-custom_fonts/font = ExtResource( 8 )
-custom_colors/font_color_hover = Color( 0.596078, 0.596078, 0.596078, 1 )
-text = "Yes"
-flat = true
-
-[node name="No" type="Button" parent="UIScaler/Menu/QuitPage/HBoxContainer"]
-margin_left = 157.0
-margin_right = 310.0
-margin_bottom = 50.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-custom_fonts/font = ExtResource( 8 )
-custom_colors/font_color_hover = Color( 0.596078, 0.596078, 0.596078, 1 )
-text = "No"
-flat = true
-
 [node name="Save_dialog" type="FileDialog" parent="UIScaler/Menu"]
 margin_left = 232.5
 margin_top = 61.0
 margin_right = 613.5
 margin_bottom = 403.0
-theme = ExtResource( 9 )
+theme = ExtResource( 8 )
 popup_exclusive = true
 resizable = true
 access = 2
@@ -143,7 +90,7 @@ margin_left = 232.5
 margin_top = 61.0001
 margin_right = 613.5
 margin_bottom = 403.0
-theme = ExtResource( 9 )
+theme = ExtResource( 8 )
 popup_exclusive = true
 window_title = "Otwórz plik"
 resizable = true
@@ -171,7 +118,7 @@ margin_right = 248.0
 margin_bottom = 78.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = ExtResource( 8 )
+custom_fonts/font = ExtResource( 9 )
 custom_colors/font_color_hover = Color( 0.596078, 0.596078, 0.596078, 1 )
 text = "Save"
 flat = true
@@ -182,7 +129,7 @@ margin_right = 248.0
 margin_bottom = 160.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = ExtResource( 8 )
+custom_fonts/font = ExtResource( 9 )
 custom_colors/font_color_hover = Color( 0.596078, 0.596078, 0.596078, 1 )
 text = "Return"
 flat = true
@@ -193,7 +140,7 @@ margin_right = 248.0
 margin_bottom = 242.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = ExtResource( 8 )
+custom_fonts/font = ExtResource( 9 )
 custom_colors/font_color_hover = Color( 0.596078, 0.596078, 0.596078, 1 )
 toggle_mode = true
 group = SubResource( 2 )
@@ -206,7 +153,7 @@ margin_right = 248.0
 margin_bottom = 324.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = ExtResource( 8 )
+custom_fonts/font = ExtResource( 9 )
 custom_colors/font_color_hover = Color( 0.596078, 0.596078, 0.596078, 1 )
 toggle_mode = true
 group = SubResource( 2 )
@@ -219,7 +166,7 @@ margin_right = 248.0
 margin_bottom = 406.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = ExtResource( 8 )
+custom_fonts/font = ExtResource( 9 )
 custom_colors/font_color_hover = Color( 0.596078, 0.596078, 0.596078, 1 )
 toggle_mode = true
 group = SubResource( 2 )
@@ -232,7 +179,7 @@ margin_right = 248.0
 margin_bottom = 488.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = ExtResource( 8 )
+custom_fonts/font = ExtResource( 9 )
 custom_colors/font_color_hover = Color( 0.596078, 0.596078, 0.596078, 1 )
 toggle_mode = true
 group = SubResource( 2 )
@@ -243,10 +190,24 @@ flat = true
 margin_top = 492.0
 margin_right = 248.0
 margin_bottom = 524.0
-custom_fonts/font = ExtResource( 8 )
+custom_fonts/font = ExtResource( 9 )
 custom_colors/font_color_hover = Color( 0.596078, 0.596078, 0.596078, 1 )
 text = "Controls"
 flat = true
+
+[node name="ConfirmationDialog" type="ConfirmationDialog" parent="UIScaler/Menu"]
+visible = true
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -100.0
+margin_top = -35.0
+margin_right = 100.0
+margin_bottom = 35.0
+theme = ExtResource( 8 )
+window_title = "Please Confirm..."
+dialog_text = "Do you rally want to quit?"
 
 [node name="BGMPlayer" type="AudioStreamPlayer" parent="UIScaler/Menu"]
 volume_db = -10.0
@@ -257,8 +218,6 @@ id = "Menu"
 [node name="Node" type="Node" parent="."]
 script = ExtResource( 11 )
 
-[connection signal="pressed" from="UIScaler/Menu/QuitPage/HBoxContainer/Yes" to="UIScaler/Menu" method="_on_Yes_pressed"]
-[connection signal="pressed" from="UIScaler/Menu/QuitPage/HBoxContainer/No" to="UIScaler/Menu" method="_on_No_pressed"]
 [connection signal="file_selected" from="UIScaler/Menu/Save_dialog" to="Node" method="_on_Save_dialog_file_selected"]
 [connection signal="file_selected" from="UIScaler/Menu/Load_dialog" to="Node" method="_on_Load_dialog_file_selected"]
 [connection signal="pressed" from="UIScaler/Menu/HBoxContainer/Save" to="UIScaler/Menu" method="_on_Save_pressed"]
@@ -268,3 +227,4 @@ script = ExtResource( 11 )
 [connection signal="pressed" from="UIScaler/Menu/HBoxContainer/Stats" to="UIScaler/Menu" method="_on_Stats_pressed"]
 [connection signal="pressed" from="UIScaler/Menu/HBoxContainer/Quit" to="UIScaler/Menu" method="_on_Quit_pressed"]
 [connection signal="pressed" from="UIScaler/Menu/HBoxContainer/Controls" to="UIScaler/Menu" method="_on_Controls_pressed"]
+[connection signal="confirmed" from="UIScaler/Menu/ConfirmationDialog" to="UIScaler/Menu" method="_on_ConfirmationDialog_confirmed"]

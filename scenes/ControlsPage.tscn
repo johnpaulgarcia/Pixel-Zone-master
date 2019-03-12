@@ -26,12 +26,14 @@ W/Up - Jump
 A/Left - Left
 D/Right - Right
 Space - Shoot
+Shift - Speed
 [/center]"
 text = "
 W/Up - Jump
 A/Left - Left
 D/Right - Right
 Space - Shoot
+Shift - Speed
 "
 scroll_following = true
 

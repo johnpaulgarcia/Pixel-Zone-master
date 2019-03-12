@@ -1,27 +1,13 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://textures/background.png" type="Texture" id=1]
-[ext_resource path="res://textures/sponsors/blender_logo_socket.png" type="Texture" id=2]
-[ext_resource path="res://ubuntu-font-family/UB22C3.tres" type="DynamicFont" id=3]
-[ext_resource path="res://animations/Credits.tres" type="Animation" id=4]
+[ext_resource path="res://ubuntu-font-family/UB22C3.tres" type="DynamicFont" id=2]
+[ext_resource path="res://animations/Credits.tres" type="Animation" id=3]
 
 [node name="TextureRect" type="TextureRect"]
 margin_right = 1033.0
 margin_bottom = 612.0
 texture = ExtResource( 1 )
-expand = true
-
-[node name="sponsors" type="TextureRect" parent="."]
-visible = false
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -361.5
-margin_top = -137.5
-margin_right = 361.5
-margin_bottom = 137.5
-texture = ExtResource( 2 )
 expand = true
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
@@ -30,16 +16,19 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 margin_left = -508.992
-margin_top = 206.252
+margin_top = -1663.49
 margin_right = 508.008
-margin_bottom = 1944.25
-custom_fonts/normal_font = ExtResource( 3 )
+margin_bottom = 2637.51
+custom_fonts/normal_font = ExtResource( 2 )
 bbcode_enabled = true
 bbcode_text = "[center]
 Program by
 [color=red]
 Karol
 [/color]
+
+
+
 [color=white]
 Graphics by:
 [/color]
@@ -48,6 +37,9 @@ Michał-ek
 Rafix
 Adamus
 [/color]
+
+
+
 [color=white]
 Level Designers
 [/color]
@@ -57,27 +49,48 @@ Karol
 Adamus
 Rafix
 [/color]
+
+
+
 [color=white]
 Music by
 [/color]
 [color=red]
 Karol
 [/color]
+
+
+
 [color=white]
 Sound Director
 [/color]
 [color=red]
 Adamus
 [/color]
+
+
+
+
+
 [color=white]
 Made With
 [/color]
+[img]res://textures/sponsors/images.png[/img]
+
+
+
+
+Platinum Sponsors
+[img]res://textures/sponsors/GamerHash.png[/img]
 [/center]
-[img]https://www.bbcode.org/images/lubeck_small.jpg[/img]"
+"
 text = "
 Program by
 
 Karol
+
+
+
 
 
 Graphics by:
@@ -86,6 +99,9 @@ Graphics by:
 Michał-ek
 Rafix
 Adamus
+
+
+
 
 
 Level Designers
@@ -97,10 +113,16 @@ Adamus
 Rafix
 
 
+
+
+
 Music by
 
 
 Karol
+
+
+
 
 
 Sound Director
@@ -109,7 +131,19 @@ Sound Director
 Adamus
 
 
+
+
+
+
+
 Made With
+
+
+
+
+
+
+Platinum Sponsors
 
 
 "
@@ -117,5 +151,5 @@ Made With
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 autoplay = "Credits"
 playback_speed = 0.1
-anims/Credits = ExtResource( 4 )
+anims/Credits = ExtResource( 3 )
 

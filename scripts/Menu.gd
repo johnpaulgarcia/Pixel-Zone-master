@@ -23,15 +23,11 @@ func show_page(node):
 	current_page = node
 
 func _on_Quit_pressed():
-	show_page($QuitPage)
+	get_node("ConfirmationDialog").popup_centered()
 
 # when preesed "Return" or "No" button in Quit Page
 func _on_Return_pressed():
 	hide()
-
-# when preesed "Yes" button in Quit Page
-func _on_Yes_pressed():
-	get_tree().quit()
 
 func _process(delta):
 	if Input.is_action_just_pressed("ui_cancel"):
@@ -42,10 +38,6 @@ func _on_Options_pressed():
 
 func _on_window_minimized_changed(value):
 	show()
-
-
-func _on_No_pressed():
-	$QuitPage.hide()
 
 
 func _on_Stats_pressed():
@@ -73,3 +65,7 @@ func save():
 
 func _on_Controls_pressed():
 	show_page($ControlsPage)
+
+
+func _on_ConfirmationDialog_confirmed():
+	get_tree().quit()

@@ -7,15 +7,15 @@
 [ext_resource path="res://sounds/sound_shoot.wav" type="AudioStream" id=5]
 [ext_resource path="res://ubuntu-font-family/UB22C3.tres" type="DynamicFont" id=6]
 [ext_resource path="res://scenes/coin.tscn" type="PackedScene" id=7]
-[ext_resource path="res://scenes/GameUI.tscn" type="PackedScene" id=8]
-[ext_resource path="res://textures/osb_left.png" type="Texture" id=9]
-[ext_resource path="res://textures/osb_right.png" type="Texture" id=10]
-[ext_resource path="res://textures/osb_jump.png" type="Texture" id=11]
-[ext_resource path="res://textures/osb_fire.png" type="Texture" id=12]
-[ext_resource path="res://scenes/timer.tscn" type="PackedScene" id=13]
-[ext_resource path="res://animations/bosses/dialog.tres" type="Animation" id=14]
-[ext_resource path="res://animations/cutscenes/next_level.tres" type="Animation" id=15]
-[ext_resource path="res://graphic_themes/theme_test.tres" type="Theme" id=16]
+[ext_resource path="res://textures/osb_left.png" type="Texture" id=8]
+[ext_resource path="res://textures/osb_right.png" type="Texture" id=9]
+[ext_resource path="res://textures/osb_jump.png" type="Texture" id=10]
+[ext_resource path="res://textures/osb_fire.png" type="Texture" id=11]
+[ext_resource path="res://scenes/timer.tscn" type="PackedScene" id=12]
+[ext_resource path="res://animations/bosses/dialog.tres" type="Animation" id=13]
+[ext_resource path="res://animations/cutscenes/next_level.tres" type="Animation" id=14]
+[ext_resource path="res://graphic_themes/theme_test.tres" type="Theme" id=15]
+[ext_resource path="res://scenes/GameUI.tscn" type="PackedScene" id=16]
 
 [sub_resource type="CapsuleShape2D" id=1]
 height = 44.4787
@@ -275,16 +275,10 @@ margin_right = 60.7037
 margin_bottom = 28.4444
 custom_fonts/normal_font = ExtResource( 6 )
 
-[node name="GameUI" parent="ui" instance=ExtResource( 8 )]
-margin_left = -1.12537
-margin_top = -1.12503
-margin_right = -1.12537
-margin_bottom = -1.12503
-
 [node name="left" type="TouchScreenButton" parent="ui"]
 position = Vector2( 27.759, 490 )
 scale = Vector2( 1.49157, 1.46265 )
-normal = ExtResource( 9 )
+normal = ExtResource( 8 )
 passby_press = true
 action = "move_left"
 visibility_mode = 1
@@ -292,7 +286,7 @@ visibility_mode = 1
 [node name="right" type="TouchScreenButton" parent="ui"]
 position = Vector2( 121.542, 490 )
 scale = Vector2( 1.49157, 1.46265 )
-normal = ExtResource( 10 )
+normal = ExtResource( 9 )
 passby_press = true
 action = "move_right"
 visibility_mode = 1
@@ -300,18 +294,18 @@ visibility_mode = 1
 [node name="jump" type="TouchScreenButton" parent="ui"]
 position = Vector2( 900, 490 )
 scale = Vector2( 1.49157, 1.46265 )
-normal = ExtResource( 11 )
+normal = ExtResource( 10 )
 action = "jump"
 visibility_mode = 1
 
 [node name="fire" type="TouchScreenButton" parent="ui"]
 position = Vector2( 900, 399 )
 scale = Vector2( 1.49157, 1.46265 )
-normal = ExtResource( 12 )
+normal = ExtResource( 11 )
 action = "shoot"
 visibility_mode = 1
 
-[node name="timer" parent="ui" instance=ExtResource( 13 )]
+[node name="timer" parent="ui" instance=ExtResource( 12 )]
 margin_left = 3.25061
 margin_top = 28.625
 margin_right = -930.749
@@ -324,8 +318,8 @@ anchor_bottom = 1.0
 color = Color( 0, 0, 0, 1 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="ui"]
-anims/dialog = ExtResource( 14 )
-anims/next_level = ExtResource( 15 )
+anims/dialog = ExtResource( 13 )
+anims/next_level = ExtResource( 14 )
 
 [node name="RichTextLabel" type="RichTextLabel" parent="ui"]
 visible = false
@@ -337,7 +331,7 @@ margin_left = -386.625
 margin_top = -83.8751
 margin_right = 395.375
 margin_bottom = 37.1249
-theme = ExtResource( 16 )
+theme = ExtResource( 15 )
 custom_fonts/normal_font = ExtResource( 6 )
 bbcode_enabled = true
 bbcode_text = "[center]
@@ -348,5 +342,7 @@ text = "
 Ha ha ha!
 You'll never defeat me!
 "
+
+[node name="GameUI" parent="ui" instance=ExtResource( 16 )]
 
 [connection signal="area_entered" from="Area2D2" to="." method="_on_Area2D2_area_entered"]
