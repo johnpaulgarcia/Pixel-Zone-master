@@ -117,16 +117,3 @@ func _on_Area2D2_area_entered(area):
 	if area.name == "bossarea":
 		$ui/ProgressBar.value -= 3
 		$ui/AnimationPlayer.play("dialog")
-func save():
-    var save_dict = {
-        "filename" : get_filename(),
-        "parent" : get_parent().get_path(),
-        "coins_points" : get_node("/root/game_state").points,
-        "killed_enemies_points" : get_node("/root/killed_enemies").points,
-        "experience_points" : get_node("/root/game_experience").points,
-		"normal_mode_level" : get_node("/root/game_level").points,
-		"no_enemies_mode_level" : get_node("/root/game_level_no_enemies").points,
-		"pos_x" : get_position().x,
-		"pos_y" : get_position().y,
-    }
-    return save_dict

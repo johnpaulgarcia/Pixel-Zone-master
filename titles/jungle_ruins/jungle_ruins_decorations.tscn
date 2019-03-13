@@ -1,0 +1,196 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://titles/jungle_ruins/jungle_ruins.png" type="Texture" id=1]
+[ext_resource path="res://titles/jungle_ruins/palm_tree.png" type="Texture" id=2]
+
+[node name="jungle_ruins_decorations" type="Node2D" index="0"]
+
+[node name="00" type="Sprite" parent="." index="0"]
+
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 384, 128, 128 )
+_sections_unfolded = [ "Region" ]
+
+[node name="01" type="Sprite" parent="." index="1"]
+
+position = Vector2( 128, 0 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 128, 384, 128, 128 )
+_sections_unfolded = [ "Region" ]
+
+[node name="02" type="Sprite" parent="." index="2"]
+
+position = Vector2( 256, 0 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 256, 384, 128, 128 )
+_sections_unfolded = [ "Region" ]
+
+[node name="03" type="Sprite" parent="." index="3"]
+
+position = Vector2( 376, 0 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 384, 384, 64, 128 )
+_sections_unfolded = [ "Region" ]
+
+[node name="04" type="Sprite" parent="." index="4"]
+
+position = Vector2( 0, 128 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 512, 128, 128 )
+_sections_unfolded = [ "Region" ]
+
+[node name="05" type="Sprite" parent="." index="5"]
+
+position = Vector2( 128, 128 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 128, 512, 128, 128 )
+_sections_unfolded = [ "Region" ]
+
+[node name="06" type="Sprite" parent="." index="6"]
+
+position = Vector2( 256, 128 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 256, 512, 128, 128 )
+_sections_unfolded = [ "Region" ]
+
+[node name="07" type="Sprite" parent="." index="7"]
+
+position = Vector2( 376, 128 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 384, 512, 64, 128 )
+_sections_unfolded = [ "Region" ]
+
+[node name="08" type="Sprite" parent="." index="8"]
+
+position = Vector2( 472, 56 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 192, 640, 128, 128 )
+_sections_unfolded = [ "Region" ]
+
+[node name="09" type="Sprite" parent="." index="9"]
+
+position = Vector2( 600, 56 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 320, 640, 128, 128 )
+_sections_unfolded = [ "Region" ]
+
+[node name="10" type="Sprite" parent="." index="10"]
+
+position = Vector2( 472, 184 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 192, 768, 128, 64 )
+_sections_unfolded = [ "Region" ]
+
+[node name="11" type="Sprite" parent="." index="11"]
+
+position = Vector2( 600, 184 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 320, 768, 128, 64 )
+_sections_unfolded = [ "Region" ]
+
+[node name="12" type="Sprite" parent="." index="12"]
+
+position = Vector2( 736, 64 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 128, 832, 128, 128 )
+_sections_unfolded = [ "Region" ]
+
+[node name="13" type="Sprite" parent="." index="13"]
+
+position = Vector2( 872, 56 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 256, 832, 128, 128 )
+_sections_unfolded = [ "Region" ]
+
+[node name="14" type="Sprite" parent="." index="14"]
+
+position = Vector2( 0, 224 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 384, 832, 128, 128 )
+_sections_unfolded = [ "Region" ]
+
+[node name="15" type="Sprite" parent="." index="15"]
+
+position = Vector2( 128, 224 )
+texture = ExtResource( 2 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 128, 128 )
+_sections_unfolded = [ "Region" ]
+
+[node name="16" type="Sprite" parent="." index="16"]
+
+position = Vector2( 256, 224 )
+texture = ExtResource( 2 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 128, 0, 128, 128 )
+_sections_unfolded = [ "Region" ]
+
+[node name="17" type="Sprite" parent="." index="17"]
+
+position = Vector2( 128, 352 )
+texture = ExtResource( 2 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 128, 128, 128 )
+_sections_unfolded = [ "Region" ]
+
+[node name="18" type="Sprite" parent="." index="18"]
+
+position = Vector2( 352, 480 )
+texture = ExtResource( 2 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 32, 128, 128, 128 )
+_sections_unfolded = [ "Offset", "Region" ]
+
+[node name="19" type="Sprite" parent="." index="19"]
+
+position = Vector2( 384, 352 )
+texture = ExtResource( 2 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 64, 0, 128, 128 )
+_sections_unfolded = [ "Offset", "Region" ]
+
+[node name="20" type="Sprite" parent="." index="20"]
+
+position = Vector2( 256, 352 )
+texture = ExtResource( 2 )
+centered = false
+region_enabled = true
+region_rect = Rect2( -64, 0, 128, 128 )
+_sections_unfolded = [ "Offset", "Region" ]
+
+

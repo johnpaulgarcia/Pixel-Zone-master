@@ -1,4 +1,4 @@
-extends Control
+extends Node2D
 
 # Declare member variables here. Examples:
 # var a = 2
@@ -13,8 +13,10 @@ func _ready():
 #	pass
 
 
-func _on_Button2_pressed():
-	get_tree().change_scene("scenes/MainMenu.tscn")
+func _on_Area2D_body_entered(body):
+	if body.name == "player":
+		get_tree().change_scene("scenes/GameOver.tscn")
 
-func _on_Button_pressed():
-	get_tree().quit()
+func _on_nextlevel_body_entered(body):
+	if body.name == "player":
+		get_tree().change_scene("scenes/Credits.tscn")

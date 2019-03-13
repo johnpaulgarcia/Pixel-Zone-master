@@ -1,6 +1,6 @@
 [gd_scene load_steps=11 format=2]
 
-[ext_resource path="res://scripts/scenes/normal_mode/stage2.gd" type="Script" id=1]
+[ext_resource path="res://scripts/scenes/levels/pixel_adventure/stage2.gd" type="Script" id=1]
 [ext_resource path="res://titles/tileset.tres" type="TileSet" id=2]
 [ext_resource path="res://scenes/coin.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/enemy.tscn" type="PackedScene" id=4]
@@ -8,6 +8,8 @@
 [ext_resource path="res://scenes/parallax_bg.tscn" type="PackedScene" id=6]
 [ext_resource path="res://sounds/music.ogg" type="AudioStream" id=7]
 [ext_resource path="res://textures/bullet.png" type="Texture" id=8]
+
+
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 1797.06, 10 )

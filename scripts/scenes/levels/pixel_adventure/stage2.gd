@@ -13,4 +13,4 @@ func _on_Area2D2_body_entered(body):
 
 func _on_nextlevel_body_entered(body):
 	if body.name =="player":
-		get_tree().change_scene("scenes/stages/normal_mode/stage3_boss.tscn")
+		get_tree().change_scene("scenes/stages/pixel_adventure/stage3_boss.tscn")

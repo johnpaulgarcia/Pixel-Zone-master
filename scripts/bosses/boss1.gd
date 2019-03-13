@@ -51,4 +51,4 @@ func hit_by_bullet():
 	$ProgressBar.value -= 2.5
 	if $ProgressBar.value == 0:
 		state = STATE_KILLED
-		get_tree().change_scene("scenes/Credits.tscn")
+		get_tree().change_scene("/scenes/stages/jungle_ruins/stage01.tscn")

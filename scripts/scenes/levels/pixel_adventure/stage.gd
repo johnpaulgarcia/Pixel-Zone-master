@@ -31,4 +31,4 @@ func save():
 
 func _on_nextlevel_body_entered(body):
 	if body.name == "player":
-		get_tree().change_scene("scenes/stages/normal_mode/stage2.tscn")
+		get_tree().change_scene("scenes/stages/pixel_adventure/stage2.tscn")

@@ -1,7 +1,7 @@
 [gd_scene load_steps=14 format=2]
 
-[ext_resource path="res://scripts/scenes/normal_mode/stage.gd" type="Script" id=1]
-[ext_resource path="res://titles/tileset.tres" type="TileSet" id=2]
+[ext_resource path="res://scripts/scenes/levels/pixel_adventure/stage.gd" type="Script" id=1]
+[ext_resource path="res://titles/pixel_adventure/tileset.tres" type="TileSet" id=2]
 [ext_resource path="res://scenes/coin.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/moving_platform.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scenes/one_way_platform.tscn" type="PackedScene" id=5]

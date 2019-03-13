@@ -6,7 +6,7 @@ func _process(delta):
 		$RichTextLabel.hide()
 		
 func _on_Normal_mode_pressed():
-	get_tree().change_scene("scenes/stages/normal_mode/stage.tscn")
+	get_tree().change_scene("scenes/stages/pixel_adventure/stage.tscn")
 
 
 

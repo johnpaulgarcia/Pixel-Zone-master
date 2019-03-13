@@ -1,12 +1,20 @@
 extends Node
 
-
 func _on_Save_dialog_file_selected(path):
     var save_game = File.new()
     save_game.open(path, File.WRITE)
     var save_nodes = get_tree().get_nodes_in_group("Persist")
     for i in save_nodes:
-        var node_data = i.call("save");
+        var node_data = {
+        "parent" : get_parent().get_path(),
+        "coins_points" : get_node("/root/game_state").points,
+        "killed_enemies_points" : get_node("/root/killed_enemies").points,
+        "experience_points" : get_node("/root/game_experience").points,
+		"normal_mode_level" : get_node("/root/game_level").points,
+		"no_enemies_mode_level" : get_node("/root/game_level_no_enemies").points,
+		"pos_x" : get_position().x,
+		"pos_y" : get_position().y,
+	}
         save_game.store_line(to_json(node_data))
     save_game.close()
 
