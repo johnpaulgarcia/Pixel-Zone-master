@@ -10,8 +10,6 @@ func _on_Save_dialog_file_selected(path):
         "coins_points" : get_node("/root/game_state").points,
         "killed_enemies_points" : get_node("/root/killed_enemies").points,
         "experience_points" : get_node("/root/game_experience").points,
-		"normal_mode_level" : get_node("/root/game_level").points,
-		"no_enemies_mode_level" : get_node("/root/game_level_no_enemies").points,
 		"pos_x" : get_position().x,
 		"pos_y" : get_position().y,
 	}

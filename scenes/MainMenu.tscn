@@ -37,5 +37,10 @@ custom_colors/font_color_hover = Color( 0.596078, 0.596078, 0.596078, 1 )
 text = "Quit"
 flat = true
 
+[node name="Label" type="Label" parent="."]
+margin_right = 40.0
+margin_bottom = 14.0
+text = "Current Wersion 0.1.6.0ed2c463-beta"
+
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]
