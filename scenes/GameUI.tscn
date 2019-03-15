@@ -81,8 +81,8 @@ popup_exclusive = true
 resizable = true
 access = 2
 filters = PoolStringArray( "*.save" )
-current_dir = "C:/Users/Karol Tomaszewski/Documents/Pixel Zone"
-current_path = "C:/Users/Karol Tomaszewski/Documents/Pixel Zone/"
+current_dir = "C:/"
+current_path = "C:/"
 
 [node name="Load_dialog" type="FileDialog" parent="UIScaler/Menu"]
 material = SubResource( 1 )
@@ -97,8 +97,8 @@ resizable = true
 mode = 0
 access = 2
 filters = PoolStringArray( "*.save" )
-current_dir = "C:/Users/Karol Tomaszewski/Documents/Pixel Zone"
-current_path = "C:/Users/Karol Tomaszewski/Documents/Pixel Zone/"
+current_dir = "C:/"
+current_path = "C:/"
 
 [node name="HBoxContainer" type="VBoxContainer" parent="UIScaler/Menu"]
 anchor_left = 0.5
@@ -207,6 +207,7 @@ margin_right = 100.0
 margin_bottom = 35.0
 theme = ExtResource( 8 )
 window_title = "Please Confirm..."
+resizable = true
 dialog_text = "Do you rally want to quit?"
 
 [node name="BGMPlayer" type="AudioStreamPlayer" parent="UIScaler/Menu"]
@@ -218,8 +219,8 @@ id = "Menu"
 [node name="Node" type="Control" parent="."]
 script = ExtResource( 11 )
 
-[connection signal="file_selected" from="UIScaler/Menu/Save_dialog" to="Node" method="_on_Save_dialog_file_selected"]
-[connection signal="file_selected" from="UIScaler/Menu/Load_dialog" to="Node" method="_on_Load_dialog_file_selected"]
+[connection signal="file_selected" from="UIScaler/Menu/Save_dialog" to="UIScaler/Menu" method="_on_Save_dialog_file_selected"]
+[connection signal="file_selected" from="UIScaler/Menu/Load_dialog" to="UIScaler/Menu" method="_on_Load_dialog_file_selected"]
 [connection signal="pressed" from="UIScaler/Menu/HBoxContainer/Save" to="UIScaler/Menu" method="_on_Save_pressed"]
 [connection signal="pressed" from="UIScaler/Menu/HBoxContainer/Return" to="UIScaler/Menu" method="_on_Return_pressed"]
 [connection signal="pressed" from="UIScaler/Menu/HBoxContainer/Load" to="UIScaler/Menu" method="_on_Load_pressed"]
